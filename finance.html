@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TCP Market</title>
+	<meta name="description" content="TCP Market">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/css/owl.theme.default.min.css">
+</head>
+
+<body>
+
+	<div id="finance">
+		<div class="flex">
+			<div class="financeSidebar">
+				<a href="#" class="financeSidebarLogo">
+					<img src="img/logo.svg" alt="">
+				</a>
+				<ul class="financeSidebarMenu">
+					<li>
+						<a href="#"><img src="img/accountSidebar1.svg" alt=""> <span>Аккаунт</span></a>
+					</li>
+					<li class="active">
+						<a href="#"><img src="img/accountSidebar2.svg" alt=""> <span>Настройки</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/accountSidebar3.svg" alt=""> <span>Финансы</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/accountSidebar4.svg" alt=""> <span>Мой магазин</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/accountSidebar5.svg" alt=""> <span>Помощь</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="financeMainHeader flex">
+					<h2></h2>
+					<div class="financeMainHeaderRight flex">
+						<div class="financeMainHeaderSearch">
+							<input type="search" placeholder="Поиск">
+							<button>
+								<img src="img/search.svg" alt="">
+							</button>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/accountCart.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/accountWallet.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/accountNotifications.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/ava.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="financeHistory">
+						<div class="financeHistoryTitle flex">
+							<h3>История</h3>
+							<a href="#">
+								<img src="img/dotsThreeVertical.svg" alt="">
+							</a>
+						</div>
+						<div class="financeHistoryItem flex">
+							<img src="img/download.svg" alt="">
+							<div class="financeHistoryItemTitle">
+								<h4>Пополнение баланса</h4>
+								<p>23 апреля в 17:54</p>
+							</div>
+							<p class="financeHistoryItemTether">500 Tether</p>
+							<div class="financeHistoryItemPrice">
+								<p>+500 USDT</p>
+								<span>23.500 USDT</span>
+							</div>
+						</div>
+						<div class="financeHistoryItem flex">
+							<img src="img/download.svg" alt="">
+							<div class="financeHistoryItemTitle">
+								<h4>Пополнение баланса</h4>
+								<p>23 апреля в 17:54</p>
+							</div>
+							<p class="financeHistoryItemTether">500 Tether</p>
+							<div class="financeHistoryItemPrice">
+								<p>+500 USDT</p>
+								<span>23.500 USDT</span>
+							</div>
+						</div>
+						<div class="financeHistoryItem flex">
+							<img src="img/download.svg" alt="">
+							<div class="financeHistoryItemTitle">
+								<h4>Пополнение баланса</h4>
+								<p>23 апреля в 17:54</p>
+							</div>
+							<p class="financeHistoryItemTether">500 Tether</p>
+							<div class="financeHistoryItemPrice">
+								<p>+500 USDT</p>
+								<span>23.500 USDT</span>
+							</div>
+						</div>
+						<div class="financeHistoryItem flex">
+							<img src="img/download.svg" alt="">
+							<div class="financeHistoryItemTitle">
+								<h4>Пополнение баланса</h4>
+								<p>23 апреля в 17:54</p>
+							</div>
+							<p class="financeHistoryItemTether">500 Tether</p>
+							<div class="financeHistoryItemPrice">
+								<p>+500 USDT</p>
+								<span>23.500 USDT</span>
+							</div>
+						</div>
+						<div class="financeHistoryItem flex">
+							<img src="img/download.svg" alt="">
+							<div class="financeHistoryItemTitle">
+								<h4>Пополнение баланса</h4>
+								<p>23 апреля в 17:54</p>
+							</div>
+							<p class="financeHistoryItemTether">500 Tether</p>
+							<div class="financeHistoryItemPrice">
+								<p>+500 USDT</p>
+								<span>23.500 USDT</span>
+							</div>
+						</div>
+					</div>
+					<div class="financeBalance"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="libs/owl-carousel/js/owl.carousel.min.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			margin: 15,
+			autoplay: false,
+			dots:true,
+		});
+	</script>
+	<script>
+		$(function() {
+
+			$('.menuMobile').on('click', function(e) {
+				e.preventDefault();
+				$(this).toggleClass('menuMobile_active');
+				$('.menuMobileBlock').toggleClass('menuMobileBlock_active');
+			});
+			$('.navCategoriesButton').on('click', function(e) {
+				e.preventDefault();
+				$('.navCategoriesBlock').toggleClass('navCategoriesBlock_active');
+			});
+
+		});
+	</script>
+
+</body>
+</html>

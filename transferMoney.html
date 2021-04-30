@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TCP Market</title>
+	<meta name="description" content="TCP Market">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/css/owl.theme.default.min.css">
+</head>
+
+<body>
+
+	<div id="transferMoney">
+		<div class="flex">
+			<div class="transferMoneySidebar">
+				<a href="#" class="transferMoneySidebarLogo">
+					<img src="img/logo.svg" class="transferMoneySidebarLogoDesktop" alt="">
+					<img src="img/logoMini.svg" class="transferMoneySidebarLogoMobile" alt="">
+				</a>
+				<ul class="transferMoneySidebarMenu">
+					<li>
+						<a href="#"><img src="img/accountSidebar1.svg" alt=""> <span>Аккаунт</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/accountSidebar2.svg" alt=""> <span>Настройки</span></a>
+					</li>
+					<li class="active">
+						<a href="#"><img src="img/accountSidebar3.svg" alt=""> <span>Финансы</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/accountSidebar4.svg" alt=""> <span>Мой магазин</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/accountSidebar5.svg" alt=""> <span>Помощь</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="transferMoneyMain">
+					<div class="transferMoneyMainHeader flex">
+						<h2></h2>
+						<div class="transferMoneyMainHeaderRight flex">
+							<div class="transferMoneyMainHeaderSearch">
+								<input type="search" placeholder="Поиск">
+								<button>
+									<img src="img/search.svg" alt="">
+								</button>
+							</div>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/accountCart.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/accountWallet.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/accountNotifications.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/ava.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="transferMoneyTitle">
+						<h2>Перевод средств</h2>
+						<div class="transferMoneyBlockTitleIcons flex">
+							<a href="#">
+								<img src="img/plus.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/dotsThreeVertical.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="transferMoneyBlock flex">
+						<div class="cryptocurrencyExchangeBlock1">
+							<div class="cryptocurrencyExchangeBlock1Card"></div>
+							<input type="text" placeholder="Сумма">
+						</div>
+						<div class="cryptocurrencyExchangeBlock2">
+							<p>На карту</p>
+							<select name="" id="">
+								<option value="">Выбрать карту</option>
+							</select>
+							<div class="cryptocurrencyExchangeBlock2Card"></div>
+							<button>Обменять</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="libs/owl-carousel/js/owl.carousel.min.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			margin: 15,
+			autoplay: false,
+			dots:true,
+		});
+	</script>
+	<script>
+		$(function() {
+
+			$('.menuMobile').on('click', function(e) {
+				e.preventDefault();
+				$(this).toggleClass('menuMobile_active');
+				$('.menuMobileBlock').toggleClass('menuMobileBlock_active');
+			});
+			$('.navCategoriesButton').on('click', function(e) {
+				e.preventDefault();
+				$('.navCategoriesBlock').toggleClass('navCategoriesBlock_active');
+			});
+
+		});
+	</script>
+
+</body>
+</html>
